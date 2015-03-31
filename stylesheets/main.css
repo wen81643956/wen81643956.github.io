@@ -5,7 +5,7 @@
   overflow: hidden;
   position: relative;
 }
-#container-img:hover {
+#container-img:hover .arrows {
   display: block;
 }
 #list {
@@ -38,7 +38,7 @@
 #buttons .on {
   background: orangered;
 }
-.arrow {
+.arrows {
   cursor: pointer;
   display: none;
   line-height: 39px;
@@ -49,11 +49,11 @@
   height: 40px;
   position: absolute;
   z-index: 2;
-  top: 100px;
+  top: 170px;
   background-color: rgba(0, 0, 0, 0.3);
   color: #fff;
 }
-.arrow:hover {
+.arrows:hover {
   background: rgba(0, 0, 0, 0.7);
 }
 #prev {

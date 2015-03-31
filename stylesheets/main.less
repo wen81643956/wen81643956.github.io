@@ -5,7 +5,10 @@
   overflow: hidden;
   position: relative;
   &:hover{
-    display: block;
+    .arrows{
+      display: block;
+    }
+
   }
 }
 
@@ -41,7 +44,7 @@
   }
 }
 
-.arrow {
+.arrows {
   cursor: pointer;
   display: none;
   line-height: 39px;
@@ -52,7 +55,7 @@
   height: 40px;
   position: absolute;
   z-index: 2;
-  top:100px;
+  top:170px;
   background-color: RGBA(0,0,0,.3);
   color: #fff;
   &:hover{
