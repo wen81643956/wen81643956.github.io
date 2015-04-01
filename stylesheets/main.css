@@ -49,7 +49,7 @@
   height: 40px;
   position: absolute;
   z-index: 2;
-  top: 170px;
+  top: 180px;
   background-color: rgba(0, 0, 0, 0.3);
   color: #fff;
 }
@@ -61,4 +61,8 @@
 }
 #next {
   right: 20px;
+}
+.image {
+  width: 600px;
+  height: 400px;
 }
