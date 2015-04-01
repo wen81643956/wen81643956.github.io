@@ -16,6 +16,8 @@
 }
 #list img {
   float: left;
+  width: 600px;
+  height: 400px;
 }
 #buttons {
   position: absolute;
@@ -61,8 +63,4 @@
 }
 #next {
   right: 20px;
-}
-.image {
-  width: 600px;
-  height: 400px;
 }
