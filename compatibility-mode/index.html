@@ -1,19 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="前端,开发,规范">
     <meta name="description" content="前端,开发,规范">
     <meta name="robots" content="前端开发规范">
     <meta name="format-detection" content="telephone=no,email=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>前端开发规范</title>
     <link rel='icon' href='http://imgcache.vikduo.com/static/d9646a682bf2b9b3c9a03f666e168e1d.png' type=‘image/x-ico’ />
     <link rel="stylesheet" href="index.css">
     <link href="//cdn.bootcss.com/bootstrap/4.0.0-alpha.2/css/bootstrap.css" rel="stylesheet">
 </head>
 <body>
+    <div id="loading" style="top:0;"><ul class="bokeh"><li></li><li></li><li></li><li></li></ul></div>
     <header>
-
+        <div class="container">
+            <nav class="navbar navbar-inverse navbar-static-top">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header col-md-12">
+                        <div class="col-md-3 center-block center-block">
+                            <a class="navbar-brand" href="#normal">一般规范</a>
+                        </div>
+                        <div class="col-md-3 center-block">
+                            <a class="navbar-brand" href="#html">HTML</a>
+                        </div>
+                        <div class="col-md-3 center-block">
+                            <a class="navbar-brand" href="#">CSS</a>
+                        </div>
+                        <div class="col-md-3 center-block">
+                            <a class="navbar-brand" href="#">Javascript</a>
+                        </div>
+                    </div>
+                </div><!-- /.container-fluid -->
+            </nav>
+        </div>
     </header>
+    <div class="container">
+        <div class="masthead">
+            <span class="icon">✍</span>
+            <h1>编码规范 by @wsh</h1>
+            <p class="lead">编写灵活、稳定、高质量的 HTML 和 CSS 代码的规范。</p>
+        </div>
+        <div class="statement">
+            <h2>声明</h2>
+        </div>
+        <div class="statement-text">
+            这是一份旨在增强团队的开发协作，提高代码质量和打造开发基石的编码风格规范，其中包含了 HTML, JavaScript 和 CSS/SCSS 这几个部分。
+            我们知道，当一个团队开始指定并实行编码规范的话，错误就会变得更加显而易见。
+            如果一段特定的代码不符合规范的话，它有可能只是代码风格错误，而也有可能会是 bug。
+            早期指定规范就使得代码审核得以更好的开展，并且可以更精确的地定位到错误。
+            只要开发者们能够保证源代码源文件都严格遵循规范，那接下去所使用的混淆、压缩和编译工具则可投其所好不尽相同。
+        </div>
+        <div class="heading" id="normal">
+            <h2>一般规范</h2>
+        </div>
+        <section>
+            <div class="col">
+                <h3>文件 / 资源命名</h3>
+                <p>在 web 项目中，所有的文件名应该都遵循同一命名约定。以可读性而言，减号（-）是用来分隔文件名的不二之选。同时它也是常见的 URL 分隔符（i.e. <code>//example.com/blog/my-blog-entry</code> or <code>//s.example.com/images/big-black-background.jpg</code>），所以理所当然的，减号应该也是用来分隔资源名称的好选择。</p>
+                <p>请确保文件命名总是以字母开头而不是数字。而以特殊字符开头命名的文件，一般都有特殊的含义与用处（比如 compass 中的下划线就是用来标记跳过直接编译的文件用的）。</p>
+                <p>资源的字母名称必须全为小写，这是因为在某些对大小写字母敏感的操作系统中，当文件通过工具压缩混淆后，或者人为修改过后，大小写不同而导致引用文件不同的错误，很难被发现。</p>
+                <p>还有一些情况下，需要对文件增加前后缀或特定的扩展名（比如 .min.js, .min.css），抑或一串前缀（比如 <code>3fa89b.main.min.css</code>）。这种情况下，建议使用点分隔符来区分这些在文件名中带有清晰意义的元数据。<br><span id="more-5361"></span></p>
+                <p><strong>不推荐</strong></p>
+                <pre class="prettyprint lang-html linenums:1 prettyprinted"><ol class="linenums"><li value="1" class="L0"><span class="pln">MyScript.js</span></li><li class="L1"><span class="pln">myCamelCaseName.css</span></li><li class="L2"><span class="pln">i_love_underscores.html</span></li><li class="L3"><span class="pln">1001-scripts.js</span></li><li class="L4"><span class="pln">my-file-min.css</span></li></ol></pre>
+                <p><strong>推荐</strong></p>
+                <div class="highlight">
+                    <pre class="prettyprint lang-html linenums:1 prettyprinted"><ol class="linenums"><li value="1" class="L0"><span class="pln">my-script.js</span></li><li class="L1"><span class="pln">my-camel-case-name.css</span></li><li class="L2"><span class="pln">i-love-underscores.html</span></li><li class="L3"><span class="pln">thousand-and-one-scripts.js</span></li><li class="L4"><span class="pln">my-file.min.css</span></li></ol></pre>
+                    <hr>
+                    <h3 id="文本缩进">文本缩进</h3>
+                    <p>一次缩进两个空格。</p>
+                    <pre class="prettyprint lang-html linenums:1 prettyprinted"><ol class="linenums"><li value="1" class="L0"><span class="tag">&lt;ul&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;li&gt;</span><span class="pln">Fantastic</span><span class="tag">&lt;/li&gt;</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;li&gt;</span><span class="pln">Great</span><span class="tag">&lt;/li&gt;</span></li><li class="L3"><span class="pln">  </span><span class="tag">&lt;li&gt;</span></li><li class="L4"><span class="pln">    </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Test</span><span class="tag">&lt;/a&gt;</span></li><li class="L5"><span class="pln">  </span><span class="tag">&lt;/li&gt;</span></li><li class="L6"><span class="tag">&lt;/ul&gt;</span></li></ol></pre>
+                    <pre class="prettyprint lang-css linenums:1 prettyprinted"><ol class="linenums"><li value="1" class="L0"><span class="lit">@media</span><span class="pln"> screen </span><span class="kwd">and</span><span class="pln"> </span><span class="pun">(</span><span class="pln">min</span><span class="pun">-</span><span class="pln">width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1100px</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L1"><span class="pln">  body </span><span class="pun">{</span></li><li class="L2"><span class="pln">    font</span><span class="pun">-</span><span class="pln">size</span><span class="pun">:</span><span class="pln"> </span><span class="lit">100</span><span class="pun">%;</span></li><li class="L3"><span class="pln">  </span><span class="pun">}</span></li><li class="L4"><span class="pun">}</span></li></ol></pre>
+                    <pre class="prettyprint lang-js linenums:1 prettyprinted"><ol class="linenums"><li value="1" class="L0"><span class="pun">(</span><span class="kwd">function</span><span class="pun">(){</span></li><li class="L1"><span class="pln">  </span><span class="kwd">var</span><span class="pln"> x </span><span class="pun">=</span><span class="pln"> </span><span class="lit">10</span><span class="pun">;</span></li><li class="L2"><span class="pln">&nbsp;</span></li><li class="L3"><span class="pln">  </span><span class="kwd">function</span><span class="pln"> y</span><span class="pun">(</span><span class="pln">a</span><span class="pun">,</span><span class="pln"> b</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L4"><span class="pln">    </span><span class="kwd">return</span><span class="pln"> </span><span class="pun">{</span></li><li class="L5"><span class="pln">      result</span><span class="pun">:</span><span class="pln"> </span><span class="pun">(</span><span class="pln">a </span><span class="pun">+</span><span class="pln"> b</span><span class="pun">)</span><span class="pln"> </span><span class="pun">*</span><span class="pln"> x</span></li><li class="L6"><span class="pln">    </span><span class="pun">}</span></li><li class="L7"><span class="pln">&nbsp;</span></li><li class="L8"><span class="pln">  </span><span class="pun">}</span></li><li class="L9"><span class="pun">}());</span></li></ol></pre>
+                    <hr>
+                    <h3 id="注释">注释</h3>
+                    <p>注释是<strong>你自己</strong>与你的小伙伴们了解代码写法和目的的唯一途径。特别是在写一些看似琐碎的无关紧要的代码时，由于记忆点不深刻，注释就变得尤为重要了。</p>
+                    <p>编写自解释代码只是一个<strong>传说</strong>，没有任何代码是可以完全自解释的。而代码注释，则是永远也不嫌多。</p>
+                    <p>当你写注释时一定要注意：不要写你的代码都干了些什么，而要写你的代码为什么要这么写，背后的考量是什么。当然也可以加入所思考问题或是解决方案的链接地址。</p>
+                    <p><strong>不推荐</strong></p>
+                    <pre class="prettyprint lang-js linenums:1 prettyprinted"><ol class="linenums"><li value="1" class="L0"><span class="kwd">var</span><span class="pln"> offset </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span></li><li class="L1"><span class="pln">&nbsp;</span></li><li class="L2"><span class="kwd">if</span><span class="pun">(</span><span class="pln">includeLabels</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L3"><span class="pln">  </span><span class="com">// Add offset of 20</span></li><li class="L4"><span class="pln">  offset </span><span class="pun">=</span><span class="pln"> </span><span class="lit">20</span><span class="pun">;</span></li><li class="L5"><span class="pun">}</span></li></ol></pre>
+                    <p><strong>推荐</strong></p>
+                    <pre class="prettyprint lang-js linenums:1 prettyprinted"><ol class="linenums"><li value="1" class="L0"><span class="kwd">var</span><span class="pln"> offset </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span></li><li class="L1"><span class="pln">&nbsp;</span></li><li class="L2"><span class="kwd">if</span><span class="pun">(</span><span class="pln">includeLabels</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L3"><span class="pln">  </span><span class="com">// If the labels are included we need to have a minimum offset of 20 pixels</span></li><li class="L4"><span class="pln">  </span><span class="com">// We need to set it explicitly because of the following bug: http://somebrowservendor.com/issue-tracker/ISSUE-1</span></li><li class="L5"><span class="pln">  offset </span><span class="pun">=</span><span class="pln"> </span><span class="lit">20</span><span class="pun">;</span></li><li class="L6"><span class="pun">}</span></li></ol></pre>
+                    <hr>
+                    <h3 id="代码检查">代码检查</h3>
+                    <p>对于比较宽松自由的编程语言来说，严格遵循编码规范和格式化风格指南就显得极为重要。遵循规范固然很好，但是有自动化流程来确保其执行情况，岂不更佳。Trust is good, control is better.</p>
+                    <p>对于 JavaScript，建议使用 <a href="http://www.jslint.com/">JSLint</a> 或 <a href="http://www.jshint.com/">JSHint</a>。</p>
+                    <hr>
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
+<script>
+    window.onload = function() {
+        var loading = document.getElementById('loading');
+        document.body.removeChild(loading);
+    };
+</script>
 </html>

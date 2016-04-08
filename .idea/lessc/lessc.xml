@@ -9,13 +9,29 @@
               <option name="cssDirectories">
                 <list>
                   <CssDirectory>
-                    <option name="path" value="E:\gitFactory\wen81643956.github.io\stylesheets" />
+                    <option name="path" value="C:\Users\bowendeng\Documents\GitHub\wen81643956.github.io\stylesheets" />
                   </CssDirectory>
                 </list>
               </option>
               <option name="id" value="0" />
-              <option name="lessDirPath" value="E:\gitFactory\wen81643956.github.io\stylesheets" />
+              <option name="lessDirPath" value="C:\Users\bowendeng\Documents\GitHub\wen81643956.github.io\stylesheets" />
               <option name="name" value="less" />
+            </LessProfile>
+          </value>
+        </entry>
+        <entry key="1">
+          <value>
+            <LessProfile>
+              <option name="cssDirectories">
+                <list>
+                  <CssDirectory>
+                    <option name="path" value="C:\Users\bowendeng\Documents\GitHub\wen81643956.github.io\compatibility-mode" />
+                  </CssDirectory>
+                </list>
+              </option>
+              <option name="id" value="1" />
+              <option name="lessDirPath" value="C:\Users\bowendeng\Documents\GitHub\wen81643956.github.io\compatibility-mode" />
+              <option name="name" value="less2" />
             </LessProfile>
           </value>
         </entry>
@@ -23,4 +39,3 @@
     </option>
   </component>
 </project>
-
