@@ -348,3 +348,7 @@ pre.prettyprint .lit {
 pre.prettyprint .com {
   color: #93a1a1;
 }
+.prettyprint .str,
+pre.prettyprint .str {
+  color: #E6DB74;
+}
