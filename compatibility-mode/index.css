@@ -71,7 +71,6 @@ ul :last-child {
   height: 37px;
   display: block;
   margin: 18px 0 18px;
-  background-image: url(../image/icons/loading_sprite_white.png);
   background-repeat: no-repeat;
   background-size: auto 37px;
   -webkit-animation: am-loading 1s steps(12) infinite;
@@ -351,4 +350,30 @@ pre.prettyprint .com {
 .prettyprint .str,
 pre.prettyprint .str {
   color: #E6DB74;
+}
+#scrollUp {
+  background-color: #777;
+  color: #eee;
+  font-size: 40px;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  bottom: 100px;
+  right: 30px;
+  overflow: hidden;
+  width: 46px;
+  height: 46px;
+  border: none;
+  opacity: .8;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.fa-angle-up:before {
+  content: "\f106";
 }
