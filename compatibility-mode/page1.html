@@ -22,16 +22,16 @@
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header col-md-12">
                     <div class="col-md-3 center-block center-block">
-                        <a class="navbar-brand" href="#normal">一般规范</a>
+                        <a class="navbar-brand" href="index.html">一般规范</a>
                     </div>
                     <div class="col-md-3 center-block">
-                        <a class="navbar-brand" href="#html">HTML</a>
+                        <a class="navbar-brand" href="page1.html">HTML</a>
                     </div>
                     <div class="col-md-3 center-block">
-                        <a class="navbar-brand" href="#css">CSS</a>
+                        <a class="navbar-brand" href="page2.html">CSS</a>
                     </div>
                     <div class="col-md-3 center-block">
-                        <a class="navbar-brand" href="#javascript">JavaScript</a>
+                        <a class="navbar-brand" href="page3.html">JavaScript</a>
                     </div>
                 </div>
             </div><!-- /.container-fluid -->
@@ -150,13 +150,13 @@
 </body>
 <script>
     (function(){
-        var loading = document.getElementById('loading')
+        var loading = document.getElementById('loading');
         document.body.removeChild(loading);
         var _w = $(window);
         var _wT = 0;
         var _backTop = $('#scrollUp');
         _w.scroll(function(e){
-            _wT = _w.scrollTop()
+            _wT = _w.scrollTop();
             if (_wT > 120) {
                 _backTop.fadeIn()
             }else{
