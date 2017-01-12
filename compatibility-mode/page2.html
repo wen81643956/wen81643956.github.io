@@ -186,6 +186,14 @@
             <p><strong>推荐</strong></p>
             <pre class="prettyprint lang-css linenums:1 prettyprinted"><ol class="linenums"><li value="1" class="L0"><span class="lit">@import</span><span class="pln"> url</span><span class="pun">(</span><span class="com">//cdn.com/foundation.css);</span></li><li class="L1"><span class="pln">&nbsp;</span></li><li class="L2"><span class="pln">html </span><span class="pun">{</span></li><li class="L3"><span class="pln">  font</span><span class="pun">-</span><span class="pln">family</span><span class="pun">:</span><span class="pln"> </span><span class="str">"open sans"</span><span class="pun">,</span><span class="pln"> arial</span><span class="pun">,</span><span class="pln"> sans</span><span class="pun">-</span><span class="pln">serif</span><span class="pun">;</span></li><li class="L4"><span class="pun">}</span></li><li class="L5"><span class="pln">&nbsp;</span></li><li class="L6"><span class="pln">body</span><span class="pun">:</span><span class="pln">after </span><span class="pun">{</span></li><li class="L7"><span class="pln">  content</span><span class="pun">:</span><span class="pln"> </span><span class="str">"pause"</span><span class="pun">;</span></li><li class="L8"><span class="pun">}</span></li></ol></pre>
             <hr>
+            <h3>css属性书写顺序</h3>
+            <p>建议遵循: 布局定位属性–>自身属性–>文本属性–>其他属性. 此条可根据自身习惯书写, 但尽量保证同类属性写在一起</p>
+            <ol>
+                <li>布局定位属性主要包括: display & list-style & position（相应的 top,right,bottom,left） & float & clear & visibility & overflow；</li>
+                <li>自身属性主要包括: width & height & margin & padding & border & background; </li>
+                <li>文本属性主要包括：color & font & text-decoration & text-align & vertical-align & white- space;</li>
+                <li>其他: content;</li>
+            </ol>
         </div>
     </section>
 </div>

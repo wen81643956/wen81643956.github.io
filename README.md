@@ -1,8 +1,7 @@
 # 欢迎来到菜鸟前端的小站，持续学习ing
 welcome~~
+## Study
 
-wen81643956.github.io //js图片轮播 
-
-wen81643956.github.io/canvasDemo/   //canvas时钟demo 
-
-wen81643956.github.io/2048demo/   //2048小游戏 
+* [js图片轮播](https://wen81643956.github.io/swiper/)
+* canvas时钟demo: [English](https://wen81643956.github.io/canvasDemo/)
+* 2048小游戏 : [English](https://wen81643956.github.io/2048demo/)
