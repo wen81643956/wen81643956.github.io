@@ -3,5 +3,5 @@ welcome~~
 ## Study
 
 * [js图片轮播](https://wen81643956.github.io/swiper/)
-* canvas时钟demo: [English](https://wen81643956.github.io/canvasDemo/)
-* 2048小游戏 : [English](https://wen81643956.github.io/2048demo/)
+* [canvas时钟demo](https://wen81643956.github.io/canvasDemo/)
+* [2048小游戏](https://wen81643956.github.io/2048demo/)
