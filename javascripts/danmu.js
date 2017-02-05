@@ -12,4 +12,3 @@ function marquee() {
   }
 }
 var time = setInterval(marquee,speed);
-
